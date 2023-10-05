@@ -144,6 +144,13 @@ footer {
   padding: 5px;
 }
 
+div#logo > img {
+  height: 100px;
+}
+
+section {
+  height: 500px;
+}
 /*appel par id*/
 div#container {
   display: grid;
