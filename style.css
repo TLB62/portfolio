@@ -150,6 +150,7 @@ div#logo > img {
 
 section {
   height: 500px;
+  background-color: lightskyblue;
 }
 /*appel par id*/
 div#container {
@@ -164,6 +165,7 @@ header > nav {
   justify-content: space-between;
   height: 100%;
   align-items: center;
+  background-color: cornflowerblue;
 }
 
 /*appel par classe*/
@@ -197,4 +199,11 @@ header > nav > i.fa-bars {
     flex-direction: column;
     display: block;
   }
+}
+
+#A-propos,
+#Expériences,
+#Projets {
+  color: white;
+  text-indent: 10%;
 }
