@@ -143,6 +143,7 @@ footer {
   border-color: blue;
   padding: 5px;
   line-height: 2em;
+  text-align: justify;
 }
 
 div#logo > img {
@@ -207,4 +208,10 @@ header > nav > i.fa-bars {
 #Projets {
   color: white;
   text-indent: 10%;
+  font-size: large;
+}
+
+h2 {
+  color: black;
+  font-size: x-large;
 }
