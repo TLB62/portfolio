@@ -147,7 +147,7 @@ footer {
 }
 
 div#logo > img {
-  height: 100px;
+  height: 200px;
 }
 
 section {
@@ -214,4 +214,12 @@ header > nav > i.fa-bars {
 h2 {
   color: black;
   font-size: x-large;
+}
+
+div.svg-icon github > img {
+  height: 100px;
+}
+
+a:hover {
+  background-color: gold;
 }
