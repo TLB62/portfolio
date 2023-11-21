@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="module" src="index.js"></script>
     <title>Thomas</title>
     <script>
         function openMenu() {
@@ -17,72 +18,120 @@
 </head>
 
 <body>
+    <div id="container">
+        <!--le header qui contient notre entête de site (logo, nav etc)-->
+        <header>
+            <nav>
+                <!--id = unique (1 seul par page)-->
+                <div id="logo"><img src="img/Photo TLB.jpeg"></div>
+                <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+                <ul class="liste">
+                    <li>
+                        <a class="liens" href="#A-propos">A propos</a>
+                    </li>
+                    <li>
+                        <a class="liens" href="#Expériences">Expériences</a>
+                    </li>
+                    <li>
+                        <a class="liens" href="#Projets">Projets</a>
+                    </li>
+                    <li>
+                        <a class="liens" href="#Contact">Contact</a>
+                    </li>
+                </ul>
 
+            </nav>
+        </header>
+        <!--contenu principal changeant à chaque page-->
+        <main>
+            <div id="BG"></div>
+            <section id="A-propos">
+                <h2>A propos</h2>
+                <p>De formation marketing avec un Master 2 en marketing, j'ai finalement choisi la création d'entreprise
+                    en
+                    2014. En effet, j'ai créé une salle de sports sous licence de marque avec L'Orange Bleue dans la
+                    ville
+                    de Douai (59). Cette belle aventure a duré 6 ans et m'a permis de développer mes compétences dans
+                    tous
+                    les domaines.
+                    En effet, quand on est chef d'entreprise on a eu plusieurs casquettes. Il faut savoir gérer la
+                    partie
+                    financière, gérer son équipe, sa communication, ses clients,...
+                <p>En 2020, j'ai pu rebondir à la BGE Hauts de France en devenant conseiller en création d'entreprise.
+                    Pendant plus de 2 ans,
+                    J'ai pu accompagner les créateurs d'entreprise en leur apportant mon expérience et mon expertise.
+                </p>
+                <p>En 2022, je suis arrivé au bout du chemin et j'avais besoin de trouver un nouveau souffle à ma
+                    carrière
+                    professionnelle.
+                    J'ai donc décidé de faire un bilan de compétences qui m'ont amené vers le métier de développeur web.
+                </p>
+                </p>
+            </section>
+            <section id="Expériences">
+                <h2>Expériences</h2>
+                <li>Chargé de mission : Initiative Gohelle, Lens</li>
+                <li>Conseiller formateur en création d’entreprise : BGE Hauts de France, Sin Le Noble</li>
+                <li>Chef d’entreprise : L’Orange Bleue mon coach fitness, Douai</li>
+            </section>
+            <section id="Projets">
+                <h2>Projets</h2>
+            </section>
+        </main>
+        <!--notre pied de page-->
 </body>
-<div id="container">
-    <!--le header qui contient notre entête de site (logo, nav etc)-->
-    <header>
-        <nav>
-            <!--id = unique (1 seul par page)-->
-            <div id="logo"><img src="img/Photo TLB.jpeg"></div>
-            <i onclick="openMenu()" class="fa-solid fa-bars"></i>
-            <ul class="liste">
-                <li>
-                    <a class="liens" href="#a-propos">A propos</a>
-                </li>
-                <li>
-                    <a class="liens" href="#Expériences">Expériences</a>
-                </li>
-                <li>
-                    <a class="liens" href="#Projets">Projets</a>
-                </li>
-            </ul>
+<footer>
+    <div id="Contact">
+        <form id="form">
+            <div class="input__container">
+                <label for="name">Name</label>
 
-        </nav>
-    </header>
-    <!--contenu principal changeant à chaque page-->
-    <main>
-        <section id="A-propos">
-            <h2>A propos</h2>
-            <p>De formation marketing avec un Master 2 en marketing, j'ai finalement choisi la création d'entreprise en
-                2014. En effet, j'ai créé une salle de sports sous licence de marque avec L'Orange Bleue dans la ville
-                de Douai (59). Cette belle aventure a duré 6 ans et m'a permis de développer mes compétences dans tous
-                les domaines.
-                En effet, quand on est chef d'entreprise on a eu plusieurs casquettes. Il faut savoir gérer la partie
-                financière, gérer son équipe, sa communication, ses clients,...
-            <p>En 2020, j'ai pu rebondir à la BGE Hauts de France en devenant conseiller en création d'entreprise.
-                Pendant plus de 2 ans,
-                J'ai pu accompagner les créateurs d'entreprise en leur apportant mon expérience et mon expertise.</p>
-            <p>En 2022, je suis arrivé au bout du chemin et j'avais besoin de trouver un nouveau souffle à ma carrière
-                professionnelle.
-                J'ai donc décidé de faire un bilan de compétences qui m'ont amené vers le métier de développeur web.</p>
-            </p>
-        </section>
-        <section id="Expériences">
-            <h2>Expériences</h2>
-            <li>Chargé de mission : Initiative Gohelle, Lens</li>
-            <li>Conseiller formateur en création d’entreprise : BGE Hauts de France, Sin Le Noble</li>
-            <li>Chef d’entreprise : L’Orange Bleue mon coach fitness, Douai</li>
-        </section>
-        <section id="Projets">
-            <h2>Projets</h2>
-
-        </section>
-        contenu
-    </main>
-    <!--notre pied de page-->
-    <footer>
-        <div class="footer__inner">
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="input__container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input__container">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script>
+        "use strict";
+        const form = document.getElementById("form");
+    </script>
+    <div class="footer_inner">
+        <li id="footer_name">Thomas Le Baron</li>
+        <li>
             <a href="https://github.com/TLB62">
-                <i class="svg-icon github"><img src="GitHub_Logo.png">Lien github</i>
+                <img src="/img/GitHub_Logo.png" alt="Logo de GitHub" title="Découvrez mon GitHub !" />
             </a>
-
+        </li>
+        <li>
             <a href="https://www.linkedin.com/in/thomas-le-baron-237b8051/">
-                <i class="svg-icon linkedin">Lien linkedin</i>
+                <img src="/img/Linkedin_Logo.png" alt="Logo de Linkedin" title="Découvrez mon Linkedin !" />
             </a>
+        </li>
+        <li id="footer_right">
+            <a href="#A-propos">
+                A propos
+            </a>
+        </li>
+        <li>
+            <a href="#Expériences">Expériences</a>
+        </li>
+        <li>
+            <a href="#Projets">Projets</a>
+        </li>
+        <li>
+            <a href="#Contact">Contact</a>
+        </li>
 
-        </div>
-    </footer>
+    </div>
+</footer>
 </div>
 
 </html>
