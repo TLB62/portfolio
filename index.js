@@ -1,22 +1,26 @@
+// écouteur d'évènement au formulaire pour les soumissions par l'utilisateur
 form.addEventListener("submit", function (event) {});
 
+// empêcher le rechargement de la page
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const email = document.getElementById("email").value;
 });
 
+// vérifier que l'adresse mail est valide
+// afficher un message d'erreur si ce n'est pas le cas
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const email = document.getElementById("email").value;
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
   if (!emailPattern.test(email)) {
-    alert("Wrong email format");
+    alert("Veuillez saisir un email valide");
     return;
   }
 
-  alert("Form submitted successfully");
+  alert("Votre message a bien été envoyé");
 });
